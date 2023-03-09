@@ -1,0 +1,9 @@
+body{
+    background-color: #f9fbfe;
+}
+
+.courses-learning-header{
+    display: flex;
+    align-items: center;
+    
+}

@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML & CSS Schedule</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="courseschedulestyle.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="main.js"></script>
+  </head>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-dark fixed-top navbar-dark">
+      <div class="container-fluid bg-dark">
+        <!-- company logo -->
+        <a class="navbar-brand" href="index.html"
+          ><img src="icons8-abc-96.png" alt="Bootstrap" width="50" height="50"
+        /></a>
+        <!-- burger button when mobile -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- navigation -->
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNavAltMarkup"
+        >
+          <div class="navbar-nav">
+            <!-- active page
+              <a class="nav-link active" aria-current="page" href="#">Home</a> -->
+
+            <a class="nav-link active" href="#" style="margin-right: 3vh">
+              <ul id="menu">
+                <li>
+                  <div onclick="gotocourselist()">Courses</div>
+                  <ul>
+                    <li><div onclick="gotohtml()">HTML & CSS</div></li>
+                    <li><div onclick="gotojs()">JavaScript</div></li>
+                    <li><div onclick="gotojava()">Java</div></li>
+                    <li><div onclick="gotooffice()">Microsoft Office</div></li>
+                  </ul>
+                </li>
+              </ul>
+            </a>
+            <a class="nav-link" href="aboutus.html" style="margin-right: 3vh"
+              >About Us</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="just-padder" style="height: 14vh"></div>
+
+      <div class="just-padder" style="height: 14vh;"></div>
+
+      <div class="courses-learning-wrapper container-fluid d-flex pt-5" style="padding: 4vh; ">
+      
+        <div class="courses-learning-container pb-5 align-items-start " style=" background-color: #fff; width: 100%;">
+          <div class="courses-learning-header d-flex align-items-center" >
+            <h4 >Front-End Web Development <br>
+                HTML & CSS: Schedule</h4>
+            <a href="coursehtmlcss.html" style="margin-left: auto; "><button type="button" class="btn btn-info" style="color: white;">Back to Course</button></a>
+            
+          </div>
+          <div class="courses-learning-content pt-5" >
+            <!-- accordion -->
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+              <!-- first accordion -->
+              <div class="accordion-item border">
+                <h2 class="accordion-header" id="flush-headingOne">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne">
+                    Monday
+                  </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" >
+                  <div class="accordion-body " >
+                    <table class="table table-responsive table-striped  table-bordered text-center" style="border: 1px solid black;">
+                        <thead>
+                            <tr>
+                                <th >Time</th>
+                                <th>Class</th>
+                                <th>Teacher</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>09.00 - 11.00</td>
+                                <td>Live Class</td>
+                                <td>Otto</td>
+                            </tr>
+                            <tr>
+                                <td>11.00  - 13.00</td>
+                                <td>Practical Class</td>
+                                <td>Jacob</td>
+                            </tr>
+                            <tr>
+                                <td>13.00  - 14.00</td>
+                                <td>Break</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>14.00  - 15.00</td>
+                                <td>Class Review</td>
+                                <td>Jacob</td>
+                            </tr>
+                            <tr>
+                                <td>15.00  - 17.00</td>
+                                <td>Live Class</td>
+                                <td>Otto</td>
+                            </tr>
+                            <tr>
+                                <td>17.00  - 18.00</td>
+                                <td>Class Review</td>
+                                <td>Jacob</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                  </div>
+                </div>
+            </div>
+  
+              <!-- second accordion -->
+              <div class="accordion-item border"  style="margin-top: 1vh;">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo">
+                    Tuesday
+                  </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" >
+                  <div class="accordion-body">
+                    <table class="table table-responsive table-striped  table-bordered text-center" style="border: 1px solid black;">
+                        <thead>
+                            <tr>
+                                <th >Time</th>
+                                <th>Class</th>
+                                <th>Teacher</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>09.00 - 11.00</td>
+                                <td>Live Class</td>
+                                <td>Otto</td>
+                            </tr>
+                            <tr>
+                                <td>11.00  - 13.00</td>
+                                <td>Practical Class</td>
+                                <td>Jacob</td>
+                            </tr>
+                            <tr>
+                                <td>13.00  - 14.00</td>
+                                <td>Break</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>14.00  - 15.00</td>
+                                <td>Class Review</td>
+                                <td>Jacob</td>
+                            </tr>
+                            <tr>
+                                <td>15.00  - 17.00</td>
+                                <td>Live Class</td>
+                                <td>Otto</td>
+                            </tr>
+                            <tr>
+                                <td>17.00  - 18.00</td>
+                                <td>Class Review</td>
+                                <td>Jacob</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+  
+              <!-- third accordion -->
+              <div class="accordion-item border"  style="margin-top: 1vh;">
+                <h2 class="accordion-header" id="flush-headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree">
+                    Wednesday
+                  </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" >
+                  <div class="accordion-body">
+                    <table class="table table-responsive table-striped  table-bordered text-center" style="border: 1px solid black;">
+                        <thead>
+                            <tr>
+                                <th >Time</th>
+                                <th>Class</th>
+                                <th>Teacher</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>09.00 - 11.00</td>
+                                <td>Live Class</td>
+                                <td>Otto</td>
+                            </tr>
+                            <tr>
+                                <td>11.00  - 13.00</td>
+                                <td>Practical Class</td>
+                                <td>Jacob</td>
+                            </tr>
+                            <tr>
+                                <td>13.00  - 14.00</td>
+                                <td>Break</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>14.00  - 15.00</td>
+                                <td>Class Review</td>
+                                <td>Jacob</td>
+                            </tr>
+                            <tr>
+                                <td>15.00  - 17.00</td>
+                                <td>Live Class</td>
+                                <td>Otto</td>
+                            </tr>
+                            <tr>
+                                <td>17.00  - 18.00</td>
+                                <td>Class Review</td>
+                                <td>Jacob</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+  
+              <!-- fourth accordion -->
+              <div class="accordion-item border"  style="margin-top: 1vh;">
+                <h2 class="accordion-header" id="flush-headingFourth">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFourth">
+                    Thursday
+                  </button>
+                </h2>
+                <div id="flush-collapseFourth" class="accordion-collapse collapse" >
+                  <div class="accordion-body">
+                    <table class="table table-responsive table-striped  table-bordered text-center" style="border: 1px solid black;">
+                        <thead>
+                            <tr>
+                                <th >Time</th>
+                                <th>Class</th>
+                                <th>Teacher</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>09.00 - 11.00</td>
+                                <td>Live Class</td>
+                                <td>Otto</td>
+                            </tr>
+                            <tr>
+                                <td>11.00  - 13.00</td>
+                                <td>Practical Class</td>
+                                <td>Jacob</td>
+                            </tr>
+                            <tr>
+                                <td>13.00  - 14.00</td>
+                                <td>Break</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>14.00  - 15.00</td>
+                                <td>Class Review</td>
+                                <td>Jacob</td>
+                            </tr>
+                            <tr>
+                                <td>15.00  - 17.00</td>
+                                <td>Live Class</td>
+                                <td>Otto</td>
+                            </tr>
+                            <tr>
+                                <td>17.00  - 18.00</td>
+                                <td>Class Review</td>
+                                <td>Jacob</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+  
+              <!-- fifth accordion -->
+              <div class="accordion-item border"  style="margin-top: 1vh;">
+                <h2 class="accordion-header" id="flush-headingFifth">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFifth">
+                    Friday
+                  </button>
+                </h2>
+                <div id="flush-collapseFifth" class="accordion-collapse collapse" >
+                  <div class="accordion-body">
+                    <table class="table table-responsive table-striped  table-bordered text-center" style="border: 1px solid black;">
+                        <thead>
+                            <tr>
+                                <th >Time</th>
+                                <th>Class</th>
+                                <th>Teacher</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>09.00 - 11.00</td>
+                                <td>Live Class</td>
+                                <td>Otto</td>
+                            </tr>
+                            <tr>
+                                <td>11.00  - 13.00</td>
+                                <td>Practical Class</td>
+                                <td>Jacob</td>
+                            </tr>
+                            <tr>
+                                <td>13.00  - 14.00</td>
+                                <td>Break</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>14.00  - 15.00</td>
+                                <td>Class Review</td>
+                                <td>Jacob</td>
+                            </tr>
+                            <tr>
+                                <td>15.00  - 17.00</td>
+                                <td>Live Class</td>
+                                <td>Otto</td>
+                            </tr>
+                            <tr>
+                                <td>17.00  - 18.00</td>
+                                <td>Class Review</td>
+                                <td>Jacob</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+  
+              
+              
+            </div>    
+            <!-- accordion end -->        
+          </div>
+        </div>
+      </div>
+
+    <!-- FOOTER -->
+    <div class="container">
+      <footer class="row  py-5 my-5 border-top">
+        <div class="col mb-3">
+          <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
+            <img src="icons8-abc-96.png" alt="Bootstrap" width="50" height="50">
+            <!-- <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg> -->
+          </a>
+        </div>
+    
+        <div class="col">
+          <!-- make space  -->
+        </div>
+        
+          <div class="col ">
+            <h5>Services</h5>
+            <ul class="nav flex-column">
+              <!-- text muted makes grayish color on text -->
+              <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-muted">Home</a></li>
+              <li class="nav-item mb-2"><a href="sitemap.html" class="nav-link p-0 text-muted">Sitemap</a></li>
+              <li class="nav-item mb-2"><a href="privacypolicy.html" class="nav-link p-0 text-muted">Privacy Policy</a></li>
+              <li class="nav-item mb-2"><a href="courses.html" class="nav-link p-0 text-muted">Courses</a></li>
+              <li class="nav-item mb-2"><a href="contact.html" class="nav-link p-0 text-muted">Contact Us</a></li>
+              <li class="nav-item mb-2"><a href="aboutus.html" class="nav-link p-0 text-muted">About</a></li>
+            </ul>
+          </div>
+      
+          <div class="col ">
+            <h5>Follow Us </h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="https://www.instagram.com" class="nav-link p-0 text-muted" target="_blank">Instagram</a></li>
+              <li class="nav-item mb-2"><a href="https://www.twitter.com" class="nav-link p-0 text-muted" target="_blank">Twitter</a></li>
+              <li class="nav-item mb-2"><a href="https://www.facebook.com" class="nav-link p-0 text-muted" target="_blank">Facebook</a></li>
+            </ul>
+          </div>
+      </footer>
+      <div class="container">
+          <p class="text-center text-muted">&copy; 2022 ABC Learning, Inc</p>
+      </div>
+    </div>
+        
+
+
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"
+    ></script>
+</body>
+</html>
