@@ -1,0 +1,43 @@
+:root {
+    --primary-color: #222831;
+    --secondary-color: #393E46;
+    --teal: #00ADB5;
+    --gray: #EEEEEE;
+}
+
+*{
+    margin: 0;
+}
+
+@media (min-width: 992px) {
+    .rounded-lg-3 { border-radius: .3rem; }
+  }
+
+  
+body{
+    font-family: "AvenirNext", "Lato", "Hirago KakuGothic ProN", Meiryo, sans-serif;
+    background-color: var(--gray);
+    width: 100%;
+}
+
+nav{
+  height: 14vh;
+}
+
+.features-container{
+    background-color: #fff;
+    padding: 4rem 0;
+    
+}
+
+.contact-container{
+    padding: 4rem ;
+}
+
+.ABC-features-section-description{
+    text-align: center;
+}
+
+
+
+
